@@ -12,7 +12,6 @@ function NewWeight() {
 
     useEffect(() => {
         const storedWeight = localStorage.getItem('weight')
-        console.log(storedWeight, JSON.parse(storedWeight))
         if (storedWeight) {
             setWeight(JSON.parse(storedWeight))
         }
