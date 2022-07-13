@@ -64,7 +64,7 @@ function NewWeight() {
                     </Col>
 
                     <Col>
-                        <LineChart weights={weight?.map(a => a.text) ?? []} labels={weight?.map(a => moment(a.date)).format('DD-MM-YY').toLocalString() ?? []}/>
+                        <LineChart weights={weight?.map(a => a.text) ?? []} labels={weight?.map(a => moment(a.date).format('DD-MM-YY').toString()) ?? []}/>
                     </Col>
                 </Row>
                 

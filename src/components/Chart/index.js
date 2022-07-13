@@ -11,9 +11,9 @@ function LineChart({weights, labels}) {
     labels,
     datasets:[
       {
-        label:"First Dataset",
+        label:"Your Weight",
         data: weights,
-        backgroundColor:'red',
+        backgroundColor:'#30E3CA',
         borderColor:'black',
         tension:0.4,
         fill:true,
@@ -21,9 +21,10 @@ function LineChart({weights, labels}) {
         pointBorderColor:'blue',
         pointBackgroundColor:'#fff',
         showLine:true
-      }
+      }  
     ]
   }
+  
   return (
     <div className='chart'>
       <Line data={data}>Hello</Line>
