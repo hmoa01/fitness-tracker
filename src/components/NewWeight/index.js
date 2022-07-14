@@ -5,6 +5,7 @@ import Weight from "../Weight";
 import FormWeight from "../FormWeight";
 import LineChart from "../Chart";
 import moment from "moment";
+import "./NewWeight.css";
 
 function NewWeight() {
 
@@ -21,7 +22,6 @@ function NewWeight() {
         if (weight) {
             localStorage.setItem('weight', JSON.stringify(weight))
             
-
         }
     }, [weight])
      
@@ -45,12 +45,12 @@ function NewWeight() {
         <div className="app">
             <div className="container">
                 <h1 className="text-center mb-4">Fitness Tracker</h1>
-                <FormWeight addWeight={addWeight} />
+                <FormWeight className="form" addWeight={addWeight} />
                 <Row>
                     <Col>
-                        <div>
+                        <div className="card-holder">
                             {weight?.map((weight, index) => (
-                                <Card key={index}>
+                                <Card className="card" key={index}>
                                     <Card.Body>
                                         <Weight
                                             index={index}

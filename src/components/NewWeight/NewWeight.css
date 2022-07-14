@@ -1,0 +1,12 @@
+.card {
+    border-radius: 20px;
+    width: 200px;
+}
+
+.card-holder {
+    border: none;
+}
+
+.form {
+    text-align: center;
+}
