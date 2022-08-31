@@ -1,0 +1,23 @@
+.closeBtn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 8px;
+    border: none;
+    font-size: 10px;
+}
+
+.date-span {
+    position: absolute;
+    top: 55px;
+    left: 80px;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.weight-span {
+    position: absolute;
+    top: 10px;
+    font-size: 1.4rem;
+    font-weight: 500;
+}

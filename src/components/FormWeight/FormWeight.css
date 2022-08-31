@@ -1,0 +1,12 @@
+form.form {
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+.input {
+    width: 300px;
+    margin: auto;
+    margin-bottom: 10px;
+}
